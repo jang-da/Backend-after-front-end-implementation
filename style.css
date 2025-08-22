@@ -41,24 +41,6 @@ h1, h4 {
     z-index: 1000;
 }
 
-.top-bar {
-    background-color: #f8f9fa;
-    font-size: 12px;
-    padding: 8px 0;
-    border-bottom: 1px solid #e9ecef;
-}
-
-.top-bar-container {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.top-bar-left a, .top-bar-right a {
-    margin-right: 15px;
-    color: #666;
-}
 
 .main-header-container {
     background-color: #fff;
@@ -326,4 +308,68 @@ h1, h4 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+/* Sub-navigation and Tags */
+.sub-nav-container {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.sub-nav {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.sub-nav-tabs {
+    display: flex;
+}
+
+.sub-nav-tabs a {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    color: #666;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px; /* Align with container border */
+}
+
+.sub-nav-tabs a.active {
+    color: #333;
+    border-bottom-color: #333;
+}
+
+.tag-list {
+    margin-left: auto;
+}
+
+.tag-list a {
+    font-size: 14px;
+    color: #555;
+    background-color: #f0f2f5;
+    padding: 6px 12px;
+    border-radius: 15px;
+    margin-left: 8px;
+    display: inline-block;
+}
+
+.tag-list a:hover {
+    background-color: #e0e2e5;
+}
+
+/* Event Banner Widget */
+.event-banner-widget {
+    padding: 0; /* Remove padding for a banner */
+}
+
+.event-banner-widget a {
+    display: block;
+}
+
+.event-banner-widget img {
+    width: 100%;
+    display: block;
+    border-radius: 8px; /* Match widget border-radius */
 }
