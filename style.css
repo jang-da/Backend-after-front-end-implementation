@@ -373,3 +373,46 @@ h1, h4 {
     display: block;
     border-radius: 8px; /* Match widget border-radius */
 }
+
+/* SVG Icon Styles */
+.feather-icon {
+    vertical-align: middle;
+    stroke-width: 2;
+}
+
+.header-right .feather-icon {
+    color: #555;
+}
+
+.post-actions button {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+}
+
+.more-options button {
+    padding: 5px;
+}
+
+.post-tags {
+    margin-top: 20px;
+}
+
+.post-tags a {
+    font-size: 13px;
+    color: #007bff;
+    background-color: #e7f3ff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.post-tags a:hover {
+    background-color: #d0e7ff;
+    text-decoration: none;
+}
+
+.tag-list a.active {
+    background-color: #007bff;
+    color: #fff;
+}

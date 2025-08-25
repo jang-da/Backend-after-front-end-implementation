@@ -16,9 +16,7 @@
                 </div>
                 <nav class="main-nav">
                     <ul>
-                        <!-- The "홈" (Home) link is active in the screenshot -->
-                        <li><a href="#" class="active">홈</a></li>
-                        <li><a href="#">라운지</a></li>
+                        <li><a href="#" class="active">라운지</a></li>
                         <li><a href="#">스토어</a></li>
                         <li><a href="#">인디</a></li>
                         <li><a href="#">쿠폰</a></li>
@@ -27,15 +25,14 @@
                 <div class="header-right">
                     <div class="search-container">
                         <input type="text" placeholder="어떤 게임을 찾고 있나요?">
-                        <!-- Using a unicode character for the search icon -->
-                        <button>&#x1F50D;</button>
+                        <button><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
                     </div>
                     <div class="user-actions">
                         <a href="#">로그인</a>
-                        <!-- Using unicode characters for icons as placeholders -->
-                        <a href="#" title="즐겨찾기">&#9733;</a> <!-- Star -->
-                        <a href="#" title="알림">&#128276;</a> <!-- Bell -->
-                        <a href="#" title="더보기">&#8942;</a> <!-- Vertical Ellipsis -->
+                        <!-- Replaced with SVG icons -->
+                        <a href="#" title="즐겨찾기"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-icon"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></a>
+                        <a href="#" title="알림"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-icon"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></a>
+                        <a href="#" title="더보기"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-icon"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg></a>
                     </div>
                 </div>
             </div>
@@ -61,47 +58,55 @@
         <main class="main-content">
             <div class="feed">
                 <!-- Card 1: Standard Post -->
-                <article class="post-card">
+                <article class="post-card" data-tags="이벤트 공지">
                     <div class="post-header">
                         <img src="https://via.placeholder.com/40x40.png" alt="User Avatar" class="avatar">
                         <div class="author-info">
                             <strong>GM 리샤</strong>
                             <span>STOVE 스태프</span>
                         </div>
-                        <button class="more-options">&#8942;</button>
+                        <button class="more-options"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-icon"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg></button>
                     </div>
                     <div class="post-body">
                         <p>모험가 여러분, 혹시 모험가 여러분의 목소리가...?<br>어둠군단장 아브렐슈드만큼이나 아름답다는 사실을 알고 계셨나요?</p>
                         <img src="https://via.placeholder.com/600x200.png" alt="Post Image" class="post-image">
+                        <div class="post-tags">
+                            <a href="#">#이벤트</a>
+                            <a href="#">#공지</a>
+                        </div>
                     </div>
                     <div class="post-footer">
                         <div class="post-stats">
                             <span>조회 1.2k</span>
                         </div>
                         <div class="post-actions">
-                            <button>👍 12</button>
-                            <button>💬 4</button>
-                            <button>🔗 공유</button>
+                            <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-icon icon-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span>12</span></button>
+                            <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-icon icon-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> <span>4</span></button>
+                            <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-icon icon-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg> <span>공유</span></button>
                         </div>
                     </div>
                 </article>
 
                 <!-- Card 2: Banner Post -->
-                <article class="post-card post-card-banner">
+                <article class="post-card post-card-banner" data-tags="이벤트 배너">
                      <div class="post-body">
                         <img src="https://via.placeholder.com/600x300.png" alt="Banner Ad" class="post-image">
+                        <div class="post-tags" style="padding: 15px 20px;">
+                            <a href="#">#이벤트</a>
+                            <a href="#">#배너</a>
+                        </div>
                     </div>
                 </article>
 
                 <!-- Card 3: Video Post -->
-                <article class="post-card">
+                <article class="post-card" data-tags="로스트아크 공략">
                     <div class="post-header">
                         <img src="https://via.placeholder.com/40x40.png" alt="User Avatar" class="avatar">
                         <div class="author-info">
                             <strong>GM 포포</strong>
                             <span>STOVE 스태프</span>
                         </div>
-                        <button class="more-options">&#8942;</button>
+                        <button class="more-options"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-icon"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg></button>
                     </div>
                     <div class="post-body">
                         <p>WORLD BOSS RAGE - MONSTER HUNTER RISE</p>
@@ -109,28 +114,32 @@
                             <img src="https://via.placeholder.com/600x337.png" alt="Video Thumbnail" class="post-image">
                             <div class="play-button">&#9658;</div>
                         </div>
+                        <div class="post-tags">
+                            <a href="#">#로스트아크</a>
+                            <a href="#">#공략</a>
+                        </div>
                     </div>
                     <div class="post-footer">
                         <div class="post-stats">
                             <span>조회 350</span>
                         </div>
                         <div class="post-actions">
-                            <button>👍 3</button>
-                            <button>💬 0</button>
-                            <button>🔗 공유</button>
+                            <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-icon icon-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span>3</span></button>
+                            <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-icon icon-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> <span>0</span></button>
+                            <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-icon icon-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg> <span>공유</span></button>
                         </div>
                     </div>
                 </article>
 
                 <!-- Card 4: Poll Post -->
-                <article class="post-card">
+                <article class="post-card" data-tags="이벤트">
                     <div class="post-header">
                         <img src="https://via.placeholder.com/40x40.png" alt="User Avatar" class="avatar">
                         <div class="author-info">
                             <strong>GM 다비</strong>
                             <span>STOVE 스태프</span>
                         </div>
-                        <button class="more-options">&#8942;</button>
+                        <button class="more-options"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-icon"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg></button>
                     </div>
                     <div class="post-body">
                         <p>내 고향 자랑! 여러 지역의 음식 중 가장 먹어보고 싶은 음식은?</p>
@@ -148,6 +157,9 @@
                                 <label for="poll3">나주 곰탕</label>
                             </div>
                         </div>
+                        <div class="post-tags">
+                            <a href="#">#이벤트</a>
+                        </div>
                     </div>
                     <div class="post-footer">
                         <div class="post-stats">
@@ -155,9 +167,9 @@
                             <span>조회 500</span>
                         </div>
                         <div class="post-actions">
-                            <button>👍 5</button>
-                            <button>💬 1</button>
-                            <button>🔗 공유</button>
+                            <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-icon icon-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span>5</span></button>
+                            <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-icon icon-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> <span>1</span></button>
+                            <button><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-icon icon-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg> <span>공유</span></button>
                         </div>
                     </div>
                 </article>
@@ -176,5 +188,6 @@
             </div>
         </aside>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
