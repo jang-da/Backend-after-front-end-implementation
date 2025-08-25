@@ -284,32 +284,6 @@ h1, h4 {
     font-weight: bold;
 }
 
-.trending-lounges-widget ol li a {
-    display: flex;
-    align-items: center;
-    padding: 8px 5px;
-    border-radius: 5px;
-}
-
-.trending-lounges-widget ol li a:hover {
-    background-color: #f0f2f5;
-}
-
-.trending-lounges-widget ol li img {
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
-.popular-posts-widget ul li a {
-    display: block;
-    padding: 8px 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 /* Sub-navigation and Tags */
 .sub-nav-container {
     background-color: #fff;
@@ -415,4 +389,38 @@ h1, h4 {
 .tag-list a.active {
     background-color: #007bff;
     color: #fff;
+}
+
+.icon-heart.liked {
+    fill: #ff4e00; /* Using the theme's orange-red color */
+    stroke: #ff4e00;
+}
+
+/* Comment Section */
+.comment-section {
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #eee;
+}
+.comment-section.hidden {
+    display: none;
+}
+.comment-section textarea {
+    width: 100%;
+    min-height: 60px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: vertical;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+.comment-section .submit-comment {
+    background-color: #ff4e00;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    float: right;
+    font-weight: bold;
 }
