@@ -110,12 +110,17 @@ h1, h4 {
 }
 
 .user-actions a {
-    margin-left: 15px;
-    font-size: 14px;
+    margin-left: 16px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+    display: inline-flex;
+    align-items: center;
 }
 
-.user-actions a[title] {
-    font-size: 20px;
+.user-actions .feather-icon {
+    width: 22px;
+    height: 22px;
 }
 
 /* Page Layout */
@@ -355,7 +360,7 @@ h1, h4 {
 }
 
 .header-right .feather-icon {
-    color: #555;
+    color: #333;
 }
 
 .post-actions button {
